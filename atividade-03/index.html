@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulário Completo</title>
+</head>
+<body>
+
+  <h1>Formulário Completo</h1>
+
+  <form>
+
+    <fieldset>
+      <legend>Dados Pessoais</legend>
+      <label>Nome: <input type="text"></label><br><br>
+      <label>Sobrenome: <input type="text"></label><br><br>
+      <label>Email: <input type="text"></label><br><br>
+      <label>Telefone: <input type="text"></label><br><br>
+      <label>Data de Nascimento: <input type="date"></label>
+    </fieldset>
+
+    <fieldset>
+      <legend>Endereço</legend>
+      <label>Rua: <input type="text"></label><br><br>
+      <label>Número: <input type="text"></label><br><br>
+      <label>Cidade: <input type="text"></label><br><br>
+      <label>Estado: <input type="text"></label><br><br>
+      <label>CEP: <input type="text"></label>
+    </fieldset>
+
+    <fieldset>
+      <legend>Preferências</legend>
+      Cor Favorita:
+      <select name="cor">
+        <option>Vermelho</option>
+        <option>Azul</option>
+        <option>Verde</option>
+        <option>Amarelo</option>
+        <option>Preto</option>
+        <option>Branco</option>
+      </select>
+      <br><br>
+      Gênero:
+      <input type="radio" value="m" name="genero"> Masculino
+      <input type="radio" value="f" name="genero"> Feminino
+      <br><br>
+      Interesses:
+      <br>
+      <input type="checkbox" value="esportes"> <label>Esportes</label><br>
+      <input type="checkbox" value="musica"> <label>Música</label><br>
+      <input type="checkbox" value="tecnologia"> <label>Tecnologia</label>
+    </fieldset>
+
+    <fieldset>
+      <legend>Upload de Arquivos</legend>
+      <label>Escolha um arquivo: <input type="file"></label>
+    </fieldset>
+
+    <fieldset>
+      <legend>Informações de Login</legend>
+      <label>Nome de Usuário: <input type="text"></label><br><br>
+      <label>Senha: <input type="password"></label><br><br>
+      <label>Confirmar Senha: <input type="password"></label>
+    </fieldset>
+
+    <br>
+    <input type="submit" value="Enviar">
+
+  </form>
+
+</body>
+</html>
