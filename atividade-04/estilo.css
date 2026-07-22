@@ -1,0 +1,97 @@
+/* ==========================================================
+   Atividade 04 - Programação Web I
+   Aplicando CSS na Receita Culinária (incorporação externa)
+   Estilo clean, usando apenas o conteúdo visto em aula:
+   - Seletores de tipo, de classe (.nome) e de id (#nome)   [CSS parte 2]
+   - color, background-color, border-color                  [CSS parte 3]
+   - text-decoration, font-size, margin                     [CSS partes 1-2]
+   - border e padding (na tabela)                           [HTML parte 5]
+   ========================================================== */
+
+/* ---------- Base ---------- */
+body {
+  color: #333333;
+  background-color: #ffffff;
+  font-size: 16px;
+  margin: 30px;
+}
+
+h1 {
+  color: #8b4513;
+  border-bottom: 2px solid #e0c9a6;
+  padding-bottom: 8px;
+}
+
+h2 {
+  color: #a0522d;
+}
+
+a {
+  color: #b5651d;
+  text-decoration: none;
+}
+
+/* ---------- Menu ---------- */
+.menu a {
+  color: #8b4513;
+}
+
+.menu li {
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+
+/* ---------- Ingredientes (imagem ao lado do texto) ---------- */
+.ingredientes li {
+  margin-bottom: 16px;
+}
+
+.ingredientes img {
+  margin-right: 15px;
+}
+
+.ingredientes a {
+  color: #8b4513;
+}
+
+/* ==========================================================
+   TABELA DE PREÇOS
+   ========================================================== */
+.precos {
+  border-collapse: collapse;
+}
+
+.precos th {
+  color: #ffffff;
+  background-color: #a0522d;
+  border: 1px solid #d9c4a9;
+  padding: 8px 12px;
+}
+
+.precos td {
+  border: 1px solid #ececec;
+  padding: 8px 12px;
+}
+
+/* Critério: SÓLIDOS x LÍQUIDOS (cores de fundo diferentes) */
+.solido {
+  background-color: #faf6f0;
+}
+
+.liquido {
+  background-color: #dceef2;
+}
+
+/* Destaque discreto do VALOR UNITÁRIO e do VALOR TOTAL */
+.unitario {
+  color: #6b3410;
+}
+
+.total {
+  color: #6b3410;
+}
+
+/* Rodapé da tabela */
+.precos tfoot {
+  background-color: #f4ece0;
+}
