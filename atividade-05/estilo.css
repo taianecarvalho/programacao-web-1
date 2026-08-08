@@ -1,0 +1,175 @@
+/* ---------- Base ---------- */
+body {
+  color: #37474f;
+  background-color: #eceff1;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  margin: 30px;
+}
+
+/* ---------- Janela do cadastro ---------- */
+.janela {
+  background-color: #ffffff;
+  border: 1px solid #cfd8dc;
+  border-radius: 4px;
+  max-width: 620px;
+}
+
+.barra-titulo {
+  background-color: #00637f;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 12px 20px;
+}
+
+form {
+  padding: 20px;
+}
+
+/* ---------- Agrupamento visual: fieldset e legend ---------- */
+fieldset {
+  border: 1px solid #cfd8dc;
+  border-radius: 4px;
+  padding: 14px 16px;
+  margin-bottom: 18px;
+}
+
+legend {
+  background-color: #e0f2f7;
+  color: #00637f;
+  padding: 4px 12px;
+  border-radius: 4px;
+  text-transform: uppercase;
+  font-size: 11px;
+  font-weight: bold;
+}
+
+/* ---------- Alinhamento de rótulos e campos ---------- */
+.campo {
+  margin-bottom: 12px;
+}
+
+label {
+  display: block;
+  margin-bottom: 4px;
+  font-size: 12px;
+  font-weight: bold;
+  color: #546e7a;
+}
+
+.obrigatorio {
+  color: #c62828;
+}
+
+/* ---------- Entradas de texto ---------- */
+input[type="text"],
+input[type="password"],
+input[type="date"],
+input[type="file"],
+select {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  color: #263238;
+  border: 1px solid #b0bec5;
+  border-radius: 3px;
+  padding: 7px 10px;
+  font-size: 13px;
+  cursor: text;
+}
+
+/* Select e upload são clicáveis, não digitáveis */
+select,
+input[type="file"] {
+  cursor: pointer;
+}
+
+/* ---------- Interatividade: :hover e :focus ---------- */
+input[type="text"]:hover,
+input[type="password"]:hover,
+input[type="date"]:hover,
+select:hover {
+  background-color: #f5f7f8;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="date"]:focus,
+select:focus {
+  outline: none;
+  border-color: #00637f;
+  box-shadow: 0 0 0 2px rgba(0, 99, 127, 0.25);
+}
+
+/* ---------- Radio e checkbox ---------- */
+.opcoes {
+  background-color: #fafafa;
+  border: 1px solid #eceff1;
+  border-radius: 3px;
+  padding: 8px 10px;
+}
+
+.opcao {
+  display: block;
+  margin-bottom: 4px;
+  font-size: 13px;
+  font-weight: normal;
+  color: #37474f;
+  cursor: pointer;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  margin-right: 6px;
+  cursor: pointer;
+}
+
+/* ---------- Rodapé com os botões ---------- */
+.rodape {
+  border-top: 1px solid #eceff1;
+  padding-top: 14px;
+  text-align: right;
+}
+
+.legenda-obrigatorio {
+  color: #90a4ae;
+  font-size: 11px;
+  margin-right: 12px;
+}
+
+/* ---------- Botões ---------- */
+input[type="submit"] {
+  background-color: #00637f;
+  color: #ffffff;
+  padding: 8px 20px;
+  border: none;
+  border-radius: 3px;
+  font-size: 13px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #004d63;
+}
+
+input[type="submit"]:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(0, 99, 127, 0.35);
+}
+
+input[type="reset"] {
+  background-color: #ffffff;
+  color: #546e7a;
+  padding: 8px 20px;
+  border: 1px solid #b0bec5;
+  border-radius: 3px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+input[type="reset"]:hover {
+  background-color: #eceff1;
+}
