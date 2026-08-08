@@ -1,0 +1,359 @@
+/* ---------- Base ---------- */
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  color: #1a1a1a;
+  background-color: #ffffff;
+}
+
+a {
+  color: #1156f0;
+}
+
+h1 {
+  font-size: 26px;
+  font-weight: normal;
+  margin: 0 0 20px;
+}
+
+/* ---------- Menu lateral ---------- */
+aside {
+  display: inline-block;
+  vertical-align: top;
+  width: 18%;
+  min-width: 200px;
+  min-height: 100vh;
+  border-right: 1px solid #c9c9c9;
+  padding: 26px 16px;
+  box-sizing: border-box;
+}
+
+aside img {
+  height: 34px;
+}
+
+aside ul {
+  list-style: none;
+  margin: 34px 0 0;
+  padding: 0;
+}
+
+aside li {
+  margin-bottom: 6px;
+}
+
+aside a {
+  display: block;
+  padding: 10px 12px;
+  border-radius: 4px;
+  color: #1a1a1a;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+aside a img {
+  height: 18px;
+  vertical-align: middle;
+  margin-right: 8px;
+}
+
+aside a:hover {
+  background-color: #f0f2f5;
+}
+
+aside a.ativo {
+  background-color: #e3ecff;
+  border-left: 4px solid #1156f0;
+  color: #1156f0;
+  padding-left: 8px;
+}
+
+/* ---------- Coluna do conteúdo ----------
+   No HTML, </aside> e <div class="conteudo"> ficam colados: espaço em
+   branco entre inline-block vira espaço real e quebra a coluna. */
+.conteudo {
+  display: inline-block;
+  vertical-align: top;
+  width: 81%;
+}
+
+/* ---------- Cabeçalho ---------- */
+header {
+  border-bottom: 1px solid #c9c9c9;
+  padding: 16px 32px;
+  text-align: right;
+}
+
+header a {
+  color: #1a1a1a;
+  text-decoration: none;
+}
+
+header img {
+  height: 42px;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+/* ---------- Trilha de navegação ---------- */
+.trilha {
+  padding: 22px 32px;
+}
+
+.trilha ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+
+.trilha li {
+  display: inline-block;
+}
+
+.trilha a {
+  color: #1a1a1a;
+  text-decoration: none;
+}
+
+/* ---------- Cartão do conteúdo ---------- */
+.conteudo main {
+  background-color: #efefef;
+  margin: 0 32px 32px;
+  padding: 28px 32px;
+}
+
+/* ---------- Botões ---------- */
+button,
+.botao {
+  font-family: inherit;
+  font-size: 14px;
+  padding: 9px 18px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button[type="submit"] {
+  background-color: #1156f0;
+  color: #ffffff;
+  border-width: 0;
+}
+
+button[type="submit"]:hover {
+  background-color: #0d45c4;
+}
+
+button[type="reset"],
+.botao {
+  background-color: #ffffff;
+  color: #1156f0;
+  border: 1px solid #1156f0;
+  text-decoration: none;
+  display: inline-block;
+}
+
+button[type="reset"]:hover,
+.botao:hover {
+  background-color: #e3ecff;
+}
+
+/* ---------- Bloco de pesquisa ---------- */
+fieldset {
+  background-color: #e2e2e2;
+  border-width: 0;
+  margin: 20px 0 26px;
+  padding: 24px;
+}
+
+legend {
+  display: none;
+}
+
+fieldset label {
+  display: inline-block;
+  vertical-align: top;
+  width: 46%;
+  margin: 0 2% 16px 0;
+}
+
+label {
+  font-size: 14px;
+  color: #555555;
+}
+
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 14px;
+  padding: 9px 11px;
+  border: 1px solid #333333;
+  border-radius: 4px;
+  background-color: #ffffff;
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 5px;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline-width: 0;
+  border-color: #1156f0;
+}
+
+.acoes {
+  text-align: right;
+}
+
+/* ---------- Tabela ---------- */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #ffffff;
+}
+
+caption {
+  display: none;
+}
+
+thead {
+  background-color: #e2e2e2;
+}
+
+th {
+  text-align: left;
+  font-weight: normal;
+  padding: 16px 14px;
+}
+
+th a {
+  color: #1156f0;
+  text-decoration: none;
+}
+
+td {
+  padding: 14px;
+  font-size: 14px;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f7f7f7;
+}
+
+td input {
+  width: auto;
+  margin-top: 0;
+}
+
+td a {
+  margin-left: 14px;
+  font-size: 13px;
+}
+
+/* ---------- Tela de login ----------
+   As colunas somam 99,5%: com 100% exatos o arredondamento estoura a
+   largura e joga o painel para baixo da foto. */
+body.login {
+  background-color: #efefef;
+}
+
+body.login figure {
+  display: inline-block;
+  vertical-align: top;
+  width: 60%;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+
+body.login figure img {
+  width: 100%;
+}
+
+body.login section {
+  display: inline-block;
+  vertical-align: top;
+  width: 39.5%;
+  min-height: 100vh;
+  background-color: #efefef;
+  padding: 70px 52px;
+  box-sizing: border-box;
+}
+
+body.login h1 {
+  color: #1156f0;
+  font-size: 34px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+body.login form div {
+  margin-bottom: 20px;
+}
+
+body.login .olho {
+  background-color: transparent;
+  border-width: 0;
+  padding: 0;
+  margin-top: 8px;
+}
+
+body.login .olho img {
+  height: 18px;
+}
+
+body.login .linha {
+  font-size: 13px;
+}
+
+body.login .marcador {
+  display: inline-block;
+  width: 60%;
+}
+
+body.login .marcador input {
+  width: auto;
+  margin: 0 6px 0 0;
+}
+
+body.login button[type="submit"] {
+  width: 100%;
+  padding: 12px;
+}
+
+body.login p {
+  text-align: center;
+}
+
+body.login .sociais ul {
+  list-style: none;
+  padding: 0;
+  margin: 16px 0 26px;
+  text-align: center;
+}
+
+body.login .sociais li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+body.login .sociais a {
+  display: inline-block;
+  border: 1px solid #c9c9c9;
+  border-radius: 50px;
+  background-color: #ffffff;
+  padding: 11px;
+}
+
+body.login .sociais a:hover {
+  border-color: #1156f0;
+}
+
+body.login .sociais img {
+  height: 20px;
+  vertical-align: middle;
+}

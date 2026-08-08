@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Pets cadastrados no Hotel Pet.">
+  <title>Pets - Hotel Pet</title>
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+  <aside>
+    <a href="pets.html"><img src="imagens/logo.svg" alt="Hotel Pet"></a>
+
+    <ul>
+      <li><a href="pets.html" class="ativo"><img src="imagens/icone-pet.svg" alt=""> Pets</a></li>
+      <li><a href="reservas.html"><img src="imagens/icone-reservas.svg" alt=""> Reservas</a></li>
+      <li><a href="usuarios.html"><img src="imagens/icone-usuarios.svg" alt=""> Usuários</a></li>
+      <li><a href="configuracoes.html"><img src="imagens/icone-configuracoes.svg" alt=""> Configurações</a></li>
+    </ul>
+  </aside><div class="conteudo">
+
+    <header>
+      <a href="editar-perfil.html"><img src="imagens/avatar.svg" alt=""> Taiane Carvalho</a>
+    </header>
+
+    <nav class="trilha">
+      <ol>
+        <li><a href="index.html">Home</a></li>
+        <li>/</li>
+        <li>Pets</li>
+      </ol>
+    </nav>
+
+    <main>
+
+      <h1>Pets</h1>
+
+      <p><a href="novo-pet.html" class="botao">+ Novo Pet</a></p>
+
+      <form action="pets.html" method="get">
+        <fieldset>
+          <legend>Pesquisar pets</legend>
+
+          <label>Id
+            <input type="text" name="id">
+          </label>
+
+          <label>Raça
+            <input type="text" name="raca">
+          </label>
+
+          <label>Nome
+            <input type="text" name="nome">
+          </label>
+
+          <label>Tamanho
+            <select name="tamanho">
+              <option value="">Todos</option>
+              <option value="pequeno">Pequeno</option>
+              <option value="medio">Médio</option>
+              <option value="grande">Grande</option>
+            </select>
+          </label>
+
+          <div class="acoes">
+            <button type="submit">Pesquisar</button>
+            <button type="reset">Limpar</button>
+          </div>
+        </fieldset>
+      </form>
+
+      <table>
+        <caption>Pets cadastrados</caption>
+
+        <thead>
+          <tr>
+            <th>Sel.</th>
+            <th><a href="pets.html?ordem=id">Id</a></th>
+            <th><a href="pets.html?ordem=nome">Nome</a></th>
+            <th><a href="pets.html?ordem=tipo">Tipo</a></th>
+            <th><a href="pets.html?ordem=raca">Raça</a></th>
+            <th><a href="pets.html?ordem=tamanho">Tamanho</a></th>
+            <th>Ações</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td><input type="checkbox" name="selecionados" value="12349984501"></td>
+            <td>12349984501</td>
+            <td>Anya</td>
+            <td>Cachorro</td>
+            <td>Golden Retriever</td>
+            <td>Grande</td>
+            <td>
+              <a href="editar-pet.html">Editar</a>
+              <a href="ver-pet.html">Visualizar</a>
+            </td>
+          </tr>
+
+          <tr>
+            <td><input type="checkbox" name="selecionados" value="12349984502"></td>
+            <td>12349984502</td>
+            <td>Maya</td>
+            <td>Cachorro</td>
+            <td>Cavalier King Charles</td>
+            <td>Pequeno</td>
+            <td>
+              <a href="editar-pet.html">Editar</a>
+              <a href="ver-pet.html">Visualizar</a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+    </main>
+
+  </div>
+
+</body>
+</html>

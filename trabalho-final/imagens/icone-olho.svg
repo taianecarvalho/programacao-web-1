@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" role="img" aria-label="Mostrar senha">
+  <g fill="none" stroke="#37474F" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M2 12c2.6-4.3 6-6.5 10-6.5S19.4 7.7 22 12c-2.6 4.3-6 6.5-10 6.5S4.6 16.3 2 12z"/>
+    <circle cx="12" cy="12" r="3"/>
+  </g>
+</svg>
