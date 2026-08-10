@@ -253,6 +253,41 @@ td a {
   font-size: 13px;
 }
 
+/* Dois campos lado a lado: período (chegada/partida) e faixa de total. */
+.periodo {
+  display: block;
+}
+
+.periodo input {
+  display: inline-block;
+  width: 48%;
+  margin-right: 2%;
+}
+
+/* ---------- Etiquetas de status ---------- */
+.etiqueta {
+  display: inline-block;
+  padding: 4px 10px;
+  border: 1px solid;
+  border-radius: 4px;
+  font-size: 13px;
+}
+
+.etiqueta.reservada {
+  color: #1a8f3c;
+  border-color: #1a8f3c;
+}
+
+.etiqueta.progresso {
+  color: #b06b00;
+  border-color: #b06b00;
+}
+
+.etiqueta.finalizada {
+  color: #1156f0;
+  border-color: #1156f0;
+}
+
 /* ---------- Tela de login ----------
    As colunas somam 99,5%: com 100% exatos o arredondamento estoura a
    largura e joga o painel para baixo da foto. */
