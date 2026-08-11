@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Cadastro de uma nova reserva de estadia no Hotel Pet.">
+  <title>Nova reserva - Hotel Pet</title>
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+  <aside>
+    <a href="pets.html"><img src="imagens/logo.svg" alt="Hotel Pet"></a>
+
+    <ul>
+      <li><a href="pets.html"><img src="imagens/icone-pet.svg" alt=""> Pets</a></li>
+      <li><a href="reservas.html" class="ativo"><img src="imagens/icone-reservas.svg" alt=""> Reservas</a></li>
+      <li><a href="usuarios.html"><img src="imagens/icone-usuarios.svg" alt=""> Usuários</a></li>
+      <li><a href="configuracoes.html"><img src="imagens/icone-configuracoes.svg" alt=""> Configurações</a></li>
+    </ul>
+  </aside><div class="conteudo">
+
+    <header>
+      <a href="editar-perfil.html"><img src="imagens/avatar.svg" alt=""> Taiane Carvalho</a>
+    </header>
+
+    <nav class="trilha">
+      <ol>
+        <li><a href="index.html">Home</a></li>
+        <li>/</li>
+        <li><a href="reservas.html">Reservas</a></li>
+        <li>/</li>
+        <li>Nova reserva</li>
+      </ol>
+    </nav>
+
+    <main>
+
+      <h1>Fazer reserva</h1>
+
+      <form action="reservas.html" method="post" class="formulario">
+
+        <div class="campos">
+
+          <label>Pet *
+            <input type="text" name="pet" maxlength="60" required>
+          </label>
+
+          <label>Período *
+            <span class="periodo">
+              <input type="date" name="chegada" required>
+              <input type="date" name="partida" required>
+            </span>
+          </label>
+
+          <label>Notas
+            <textarea name="notas" rows="5" maxlength="500"></textarea>
+          </label>
+
+        </div>
+
+        <p class="total">Total das diárias: <strong>R$ 40,00</strong></p>
+
+        <div class="acoes">
+          <button type="submit">Salvar</button>
+          <button type="reset">Limpar</button>
+        </div>
+
+      </form>
+
+    </main>
+
+  </div>
+
+</body>
+</html>
