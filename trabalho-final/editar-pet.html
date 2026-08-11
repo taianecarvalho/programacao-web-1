@@ -9,7 +9,7 @@
 </head>
 <body>
 
-  <aside>
+  <div class="menu">
     <a href="pets.html"><img src="imagens/logo.svg" alt="Hotel Pet"></a>
 
     <ul>
@@ -18,13 +18,13 @@
       <li><a href="usuarios.html"><img src="imagens/icone-usuarios.svg" alt=""> Usuários</a></li>
       <li><a href="configuracoes.html"><img src="imagens/icone-configuracoes.svg" alt=""> Configurações</a></li>
     </ul>
-  </aside><div class="conteudo">
+  </div><div class="conteudo">
 
-    <header>
+    <div class="topo">
       <a href="editar-perfil.html"><img src="imagens/avatar.svg" alt=""> Taiane Carvalho</a>
-    </header>
+    </div>
 
-    <nav class="trilha">
+    <div class="trilha">
       <ol>
         <li><a href="index.html">Home</a></li>
         <li>/</li>
@@ -32,9 +32,9 @@
         <li>/</li>
         <li>Editar Pet</li>
       </ol>
-    </nav>
+    </div>
 
-    <main>
+    <div class="painel">
 
       <h1>Editar Pet</h1>
 
@@ -43,7 +43,7 @@
         <div class="campos">
 
           <label>Nome *
-            <input type="text" name="nome" value="Anya" maxlength="60" required>
+            <input type="text" name="nome" value="Anya" required>
           </label>
 
           <label>Tipo *
@@ -55,7 +55,7 @@
           </label>
 
           <label>Raça *
-            <input type="text" name="raca" value="Golden Retriever" maxlength="60" required>
+            <input type="text" name="raca" value="Golden Retriever" required>
           </label>
 
           <label>Tamanho *
@@ -81,13 +81,13 @@
         </div>
 
         <div class="acoes">
-          <button type="submit">Salvar</button>
-          <button type="reset">Limpar</button>
+          <input type="submit" value="Salvar">
+          <input type="reset" value="Limpar">
         </div>
 
       </form>
 
-    </main>
+    </div>
 
   </div>
 
