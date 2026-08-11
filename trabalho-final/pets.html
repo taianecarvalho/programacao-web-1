@@ -9,7 +9,7 @@
 </head>
 <body>
 
-  <aside>
+  <div class="menu">
     <a href="pets.html"><img src="imagens/logo.svg" alt="Hotel Pet"></a>
 
     <ul>
@@ -18,21 +18,21 @@
       <li><a href="usuarios.html"><img src="imagens/icone-usuarios.svg" alt=""> Usuários</a></li>
       <li><a href="configuracoes.html"><img src="imagens/icone-configuracoes.svg" alt=""> Configurações</a></li>
     </ul>
-  </aside><div class="conteudo">
+  </div><div class="conteudo">
 
-    <header>
+    <div class="topo">
       <a href="editar-perfil.html"><img src="imagens/avatar.svg" alt=""> Taiane Carvalho</a>
-    </header>
+    </div>
 
-    <nav class="trilha">
+    <div class="trilha">
       <ol>
         <li><a href="index.html">Home</a></li>
         <li>/</li>
         <li>Pets</li>
       </ol>
-    </nav>
+    </div>
 
-    <main>
+    <div class="painel">
 
       <h1>Pets</h1>
 
@@ -64,14 +64,13 @@
           </label>
 
           <div class="acoes">
-            <button type="submit">Pesquisar</button>
-            <button type="reset">Limpar</button>
+            <input type="submit" value="Pesquisar">
+            <input type="reset" value="Limpar">
           </div>
         </fieldset>
       </form>
 
       <table>
-        <caption>Pets cadastrados</caption>
 
         <thead>
           <tr>
@@ -114,7 +113,7 @@
         </tbody>
       </table>
 
-    </main>
+    </div>
 
   </div>
 
