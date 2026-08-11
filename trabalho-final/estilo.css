@@ -253,6 +253,55 @@ td a {
   font-size: 13px;
 }
 
+/* ---------- Formulário de cadastro (Novo Pet / Editar Pet) ----------
+   Igual ao menu lateral: </div><div> ficam colados no HTML para o espaço
+   em branco entre os inline-block não quebrar a segunda coluna. */
+.formulario .campos {
+  display: inline-block;
+  vertical-align: top;
+  width: 64%;
+}
+
+.formulario .campos label {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.formulario .imagem {
+  display: inline-block;
+  vertical-align: top;
+  width: 30%;
+  margin-left: 5%;
+}
+
+.formulario .imagem label {
+  display: block;
+}
+
+.formulario .imagem input {
+  padding: 7px;
+}
+
+.formulario .imagem figure {
+  margin: 14px 0 0;
+}
+
+.formulario .imagem img {
+  width: 100%;
+  border: 1px solid #c9c9c9;
+  background-color: #ffffff;
+}
+
+.formulario .acoes {
+  text-align: left;
+  margin-top: 12px;
+}
+
+.formulario .acoes button,
+.formulario .acoes .botao {
+  margin-right: 16px;
+}
+
 /* Dois campos lado a lado: período (chegada/partida) e faixa de total. */
 .periodo {
   display: block;
@@ -286,6 +335,61 @@ td a {
 .etiqueta.finalizada {
   color: #1156f0;
   border-color: #1156f0;
+}
+
+/* ---------- Ficha do pet (Ver pet) ---------- */
+.acoes-topo {
+  margin: 0 0 26px;
+}
+
+.acoes-topo .botao {
+  margin-right: 12px;
+}
+
+.ficha {
+  margin: 0 0 26px;
+}
+
+.ficha dt {
+  display: inline-block;
+  vertical-align: top;
+  width: 24%;
+  padding-right: 2%;
+  margin-bottom: 14px;
+  text-align: right;
+  color: #555555;
+  box-sizing: border-box;
+}
+
+.ficha dd {
+  display: inline-block;
+  vertical-align: top;
+  width: 74%;
+  margin: 0 0 14px;
+}
+
+.ficha dd img {
+  width: 160px;
+  border: 1px solid #c9c9c9;
+  background-color: #ffffff;
+}
+
+.reservas {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.reservas li {
+  margin-bottom: 8px;
+}
+
+.reservas .completa {
+  color: #1156f0;
+}
+
+.reservas .andamento {
+  color: #1a8f3c;
 }
 
 /* ---------- Tela de login ----------
