@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Edição dos dados de uma reserva de estadia do Hotel Pet.">
+  <title>Editar reserva - Hotel Pet</title>
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+  <div class="menu">
+    <a href="pets.html"><img src="imagens/logo.svg" alt="Hotel Pet"></a>
+
+    <ul>
+      <li><a href="pets.html"><img src="imagens/icone-pet.svg" alt=""> Pets</a></li>
+      <li><a href="reservas.html" class="ativo"><img src="imagens/icone-reservas.svg" alt=""> Reservas</a></li>
+      <li><a href="usuarios.html"><img src="imagens/icone-usuarios.svg" alt=""> Usuários</a></li>
+      <li><a href="configuracoes.html"><img src="imagens/icone-configuracoes.svg" alt=""> Configurações</a></li>
+    </ul>
+  </div><div class="conteudo">
+
+    <div class="topo">
+      <a href="editar-perfil.html"><img src="imagens/avatar.svg" alt=""> Taiane Carvalho</a>
+    </div>
+
+    <div class="trilha">
+      <ol>
+        <li><a href="index.html">Home</a></li>
+        <li>/</li>
+        <li><a href="reservas.html">Reservas</a></li>
+        <li>/</li>
+        <li>Editar reserva</li>
+      </ol>
+    </div>
+
+    <div class="painel">
+
+      <h1>Editar reserva</h1>
+
+      <form action="reservas.html" method="post" class="formulario">
+
+        <div class="campos">
+
+          <label>Proprietário *
+            <input type="text" name="proprietario" value="José da Silva" required>
+          </label>
+
+          <label>Pet *
+            <input type="text" name="pet" value="Anya" required>
+          </label>
+
+          <label>Período *
+            <div class="periodo">
+              <input type="date" name="chegada" value="2026-05-02" required>
+              <input type="date" name="partida" value="2026-05-07" required>
+            </div>
+          </label>
+
+          <label>Notas
+            <textarea name="notas" rows="5">Anya come ração seca duas vezes ao dia e passeia de manhã.</textarea>
+          </label>
+
+        </div>
+
+        <p class="total">Total das diárias: <strong>R$ 40,00</strong></p>
+
+        <div class="acoes">
+          <input type="submit" value="Salvar">
+          <input type="reset" value="Limpar">
+        </div>
+
+      </form>
+
+    </div>
+
+  </div>
+
+</body>
+</html>
