@@ -9,7 +9,7 @@
 </head>
 <body>
 
-  <aside>
+  <div class="menu">
     <a href="pets.html"><img src="imagens/logo.svg" alt="Hotel Pet"></a>
 
     <ul>
@@ -18,21 +18,21 @@
       <li><a href="usuarios.html"><img src="imagens/icone-usuarios.svg" alt=""> Usuários</a></li>
       <li><a href="configuracoes.html"><img src="imagens/icone-configuracoes.svg" alt=""> Configurações</a></li>
     </ul>
-  </aside><div class="conteudo">
+  </div><div class="conteudo">
 
-    <header>
+    <div class="topo">
       <a href="editar-perfil.html"><img src="imagens/avatar.svg" alt=""> Taiane Carvalho</a>
-    </header>
+    </div>
 
-    <nav class="trilha">
+    <div class="trilha">
       <ol>
         <li><a href="index.html">Home</a></li>
         <li>/</li>
         <li>Reservas</li>
       </ol>
-    </nav>
+    </div>
 
-    <main>
+    <div class="painel">
 
       <h1>Reservas</h1>
 
@@ -47,10 +47,10 @@
           </label>
 
           <label>Período
-            <span class="periodo">
+            <div class="periodo">
               <input type="date" name="chegada">
               <input type="date" name="partida">
-            </span>
+            </div>
           </label>
 
           <label>Proprietário
@@ -58,10 +58,10 @@
           </label>
 
           <label>Total
-            <span class="periodo">
-              <input type="number" name="total_min" min="0" step="0.01" placeholder="R$ 0,00">
-              <input type="number" name="total_max" min="0" step="0.01" placeholder="R$ 0,00">
-            </span>
+            <div class="periodo">
+              <input type="text" name="total_min" placeholder="R$ 0,00">
+              <input type="text" name="total_max" placeholder="R$ 0,00">
+            </div>
           </label>
 
           <label>Status
@@ -78,14 +78,13 @@
           </label>
 
           <div class="acoes">
-            <button type="submit">Pesquisar</button>
-            <button type="reset">Limpar</button>
+            <input type="submit" value="Pesquisar">
+            <input type="reset" value="Limpar">
           </div>
         </fieldset>
       </form>
 
       <table>
-        <caption>Reservas cadastradas</caption>
 
         <thead>
           <tr>
@@ -107,7 +106,7 @@
             <td>Anya</td>
             <td>02/05/2026</td>
             <td>07/05/2026</td>
-            <td><span class="etiqueta reservada">Reservada</span></td>
+            <td><div class="etiqueta reservada">Reservada</div></td>
             <td>R$ 40,00</td>
             <td>
               <a href="editar-reserva.html">Editar</a>
@@ -121,7 +120,7 @@
             <td>Maya</td>
             <td>02/05/2026</td>
             <td>07/05/2026</td>
-            <td><span class="etiqueta progresso">Em progresso</span></td>
+            <td><div class="etiqueta progresso">Em progresso</div></td>
             <td>R$ 40,00</td>
             <td>
               <a href="editar-reserva.html">Editar</a>
@@ -135,17 +134,16 @@
             <td>Anya</td>
             <td>02/05/2026</td>
             <td>07/05/2026</td>
-            <td><span class="etiqueta finalizada">Finalizada</span></td>
+            <td><div class="etiqueta finalizada">Finalizada</div></td>
             <td>R$ 40,00</td>
             <td>
-              <a href="editar-reserva.html">Editar</a>
               <a href="ver-reserva.html">Visualizar</a>
             </td>
           </tr>
         </tbody>
       </table>
 
-    </main>
+    </div>
 
   </div>
 
