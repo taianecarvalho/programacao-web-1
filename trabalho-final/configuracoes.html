@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Configurações gerais do Hotel Pet.">
+  <title>Configurações - Hotel Pet</title>
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+  <div class="menu">
+    <a href="pets.html"><img src="imagens/logo.svg" alt="Hotel Pet"></a>
+
+    <ul>
+      <li><a href="pets.html"><img src="imagens/icone-pet.svg" alt=""> Pets</a></li>
+      <li><a href="reservas.html"><img src="imagens/icone-reservas.svg" alt=""> Reservas</a></li>
+      <li><a href="usuarios.html"><img src="imagens/icone-usuarios.svg" alt=""> Usuários</a></li>
+      <li><a href="configuracoes.html" class="ativo"><img src="imagens/icone-configuracoes.svg" alt=""> Configurações</a></li>
+    </ul>
+  </div><div class="conteudo">
+
+    <div class="topo">
+      <a href="editar-perfil.html"><img src="imagens/avatar.svg" alt=""> Taiane Carvalho</a>
+    </div>
+
+    <div class="trilha">
+      <ol>
+        <li><a href="index.html">Home</a></li>
+        <li>/</li>
+        <li>Configurações</li>
+      </ol>
+    </div>
+
+    <div class="painel">
+
+      <h1>Configurações</h1>
+
+      <form action="configuracoes.html" method="post" class="formulario">
+
+        <div class="campos">
+
+          <label>Valor da diária *
+            <input type="text" name="diaria" value="R$ 8,00" required>
+          </label>
+
+          <label>Número de vagas *
+            <input type="text" name="vagas" value="20" required>
+          </label>
+
+        </div>
+
+        <div class="acoes">
+          <input type="submit" value="Salvar">
+          <input type="reset" value="Limpar">
+        </div>
+
+      </form>
+
+    </div>
+
+  </div>
+
+</body>
+</html>
