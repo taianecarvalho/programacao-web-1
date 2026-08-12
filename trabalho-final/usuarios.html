@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Usuários cadastrados no Hotel Pet.">
+  <title>Usuários - Hotel Pet</title>
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+  <div class="menu">
+    <a href="pets.html"><img src="imagens/logo.svg" alt="Hotel Pet"></a>
+
+    <ul>
+      <li><a href="pets.html"><img src="imagens/icone-pet.svg" alt=""> Pets</a></li>
+      <li><a href="reservas.html"><img src="imagens/icone-reservas.svg" alt=""> Reservas</a></li>
+      <li><a href="usuarios.html" class="ativo"><img src="imagens/icone-usuarios.svg" alt=""> Usuários</a></li>
+      <li><a href="configuracoes.html"><img src="imagens/icone-configuracoes.svg" alt=""> Configurações</a></li>
+    </ul>
+  </div><div class="conteudo">
+
+    <div class="topo">
+      <a href="editar-perfil.html"><img src="imagens/avatar.svg" alt=""> Taiane Carvalho</a>
+    </div>
+
+    <div class="trilha">
+      <ol>
+        <li><a href="index.html">Home</a></li>
+        <li>/</li>
+        <li>Usuários</li>
+      </ol>
+    </div>
+
+    <div class="painel">
+
+      <h1>Usuários</h1>
+
+      <p><a href="criar-conta.html" class="botao">+ Novo usuário</a></p>
+
+      <form action="usuarios.html" method="get">
+        <fieldset>
+          <legend>Pesquisar usuários</legend>
+
+          <label>Id
+            <input type="text" name="id">
+          </label>
+
+          <label>Nome
+            <input type="text" name="nome">
+          </label>
+
+          <label>Email
+            <input type="text" name="email">
+          </label>
+
+          <label>Função
+            <select name="funcao">
+              <option value="">Todas</option>
+              <option value="gerente">Gerente</option>
+              <option value="funcionario">Funcionário</option>
+              <option value="cliente">Cliente</option>
+            </select>
+          </label>
+
+          <label>Status
+            <select name="status">
+              <option value="">Todos</option>
+              <option value="ativo">Ativo</option>
+              <option value="inativo">Inativo</option>
+            </select>
+          </label>
+
+          <div class="acoes">
+            <input type="submit" value="Pesquisar">
+            <input type="reset" value="Limpar">
+          </div>
+        </fieldset>
+      </form>
+
+      <form action="usuarios.html" method="post">
+
+        <table>
+
+          <thead>
+            <tr>
+              <th>Sel.</th>
+              <th><a href="usuarios.html?ordem=id">Id</a></th>
+              <th><a href="usuarios.html?ordem=nome">Nome</a></th>
+              <th><a href="usuarios.html?ordem=email">Email</a></th>
+              <th><a href="usuarios.html?ordem=telefone">Telefone</a></th>
+              <th><a href="usuarios.html?ordem=funcao">Função</a></th>
+              <th><a href="usuarios.html?ordem=status">Status</a></th>
+              <th>Ações</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td><input type="checkbox" name="selecionados" value="9087651"></td>
+              <td>9087651</td>
+              <td>Taiane Carvalho</td>
+              <td>taiane@hotelpet.com</td>
+              <td>+55 (73) 99876-8943</td>
+              <td>Gerente</td>
+              <td><div class="etiqueta ativo">Ativo</div></td>
+              <td>
+                <a href="editar-usuario.html">Editar</a>
+              </td>
+            </tr>
+
+            <tr>
+              <td><input type="checkbox" name="selecionados" value="9087652"></td>
+              <td>9087652</td>
+              <td>Marcos Pereira</td>
+              <td>marcos@hotelpet.com</td>
+              <td>+55 (73) 99812-4477</td>
+              <td>Funcionário</td>
+              <td><div class="etiqueta ativo">Ativo</div></td>
+              <td>
+                <a href="editar-usuario.html">Editar</a>
+              </td>
+            </tr>
+
+            <tr>
+              <td><input type="checkbox" name="selecionados" value="9087653"></td>
+              <td>9087653</td>
+              <td>José da Silva</td>
+              <td>josedasilva@pet.com</td>
+              <td>+55 (73) 99765-3321</td>
+              <td>Cliente</td>
+              <td><div class="etiqueta ativo">Ativo</div></td>
+              <td>
+                <a href="editar-usuario.html">Editar</a>
+              </td>
+            </tr>
+
+            <tr>
+              <td><input type="checkbox" name="selecionados" value="9087654"></td>
+              <td>9087654</td>
+              <td>Ana Beatriz Rocha</td>
+              <td>anabeatriz@pet.com</td>
+              <td>+55 (73) 99654-1180</td>
+              <td>Cliente</td>
+              <td><div class="etiqueta inativo">Inativo</div></td>
+              <td>
+                <a href="editar-usuario.html">Editar</a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="acoes">
+          <input type="submit" name="acao" value="Ativar">
+          <input type="submit" name="acao" value="Inativar">
+          <input type="submit" name="acao" value="Remover">
+        </div>
+
+      </form>
+
+    </div>
+
+  </div>
+
+</body>
+</html>
