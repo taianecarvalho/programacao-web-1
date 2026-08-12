@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Edição dos dados do perfil do usuário do Hotel Pet.">
+  <title>Editar Perfil - Hotel Pet</title>
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+  <div class="menu">
+    <a href="pets.html"><img src="imagens/logo.svg" alt="Hotel Pet"></a>
+
+    <ul>
+      <li><a href="pets.html"><img src="imagens/icone-pet.svg" alt=""> Pets</a></li>
+      <li><a href="reservas.html"><img src="imagens/icone-reservas.svg" alt=""> Reservas</a></li>
+      <li><a href="usuarios.html"><img src="imagens/icone-usuarios.svg" alt=""> Usuários</a></li>
+      <li><a href="configuracoes.html"><img src="imagens/icone-configuracoes.svg" alt=""> Configurações</a></li>
+    </ul>
+  </div><div class="conteudo">
+
+    <div class="topo">
+      <a href="editar-perfil.html"><img src="imagens/avatar.svg" alt=""> Taiane Carvalho</a>
+    </div>
+
+    <div class="trilha">
+      <ol>
+        <li><a href="index.html">Home</a></li>
+        <li>/</li>
+        <li>Editar Perfil</li>
+      </ol>
+    </div>
+
+    <div class="painel">
+
+      <h1>Editar Perfil</h1>
+
+      <form action="pets.html" method="post" class="formulario">
+
+        <div class="campos">
+
+          <label>Email *
+            <input type="email" name="email" value="taiane@hotelpet.com" required>
+          </label>
+
+          <label>Nome *
+            <input type="text" name="nome" value="Taiane" required>
+          </label>
+
+          <label>Sobrenome
+            <input type="text" name="sobrenome" value="Carvalho">
+          </label>
+
+          <label>Telefone *
+            <input type="text" name="telefone" value="+55 (73) 99876-8943" required>
+          </label>
+
+        </div><div class="imagem">
+
+          <label>Foto
+            <input type="file" name="foto" accept="image/*">
+          </label>
+
+          <figure>
+            <img src="imagens/avatar.svg" alt="Foto atual do perfil de Taiane Carvalho">
+            <figcaption>Foto atual</figcaption>
+          </figure>
+
+        </div>
+
+        <div class="acoes">
+          <input type="submit" value="Salvar">
+          <input type="reset" value="Limpar">
+        </div>
+
+      </form>
+
+    </div>
+
+  </div>
+
+</body>
+</html>
