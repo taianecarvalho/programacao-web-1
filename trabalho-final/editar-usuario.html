@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Edição dos dados de um usuário cadastrado no Hotel Pet.">
+  <title>Editar Usuário - Hotel Pet</title>
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+  <div class="menu">
+    <a href="pets.html"><img src="imagens/logo.svg" alt="Hotel Pet"></a>
+
+    <ul>
+      <li><a href="pets.html"><img src="imagens/icone-pet.svg" alt=""> Pets</a></li>
+      <li><a href="reservas.html"><img src="imagens/icone-reservas.svg" alt=""> Reservas</a></li>
+      <li><a href="usuarios.html" class="ativo"><img src="imagens/icone-usuarios.svg" alt=""> Usuários</a></li>
+      <li><a href="configuracoes.html"><img src="imagens/icone-configuracoes.svg" alt=""> Configurações</a></li>
+    </ul>
+  </div><div class="conteudo">
+
+    <div class="topo">
+      <a href="editar-perfil.html"><img src="imagens/avatar.svg" alt=""> Taiane Carvalho</a>
+    </div>
+
+    <div class="trilha">
+      <ol>
+        <li><a href="index.html">Home</a></li>
+        <li>/</li>
+        <li><a href="usuarios.html">Usuários</a></li>
+        <li>/</li>
+        <li>Editar Usuário</li>
+      </ol>
+    </div>
+
+    <div class="painel">
+
+      <h1>Editar Usuário</h1>
+
+      <form action="usuarios.html" method="post" class="formulario">
+
+        <div class="campos">
+
+          <label>Email *
+            <input type="email" name="email" value="josedasilva@pet.com" required>
+          </label>
+
+          <label>Nome *
+            <input type="text" name="nome" value="José" required>
+          </label>
+
+          <label>Sobrenome
+            <input type="text" name="sobrenome" value="da Silva">
+          </label>
+
+          <label>Telefone *
+            <input type="text" name="telefone" value="+55 (73) 99765-3321" required>
+          </label>
+
+          <label>Função *
+            <select name="funcao" required>
+              <option value="">Selecione</option>
+              <option value="gerente">Gerente</option>
+              <option value="funcionario">Funcionário</option>
+              <option value="cliente" selected>Cliente</option>
+            </select>
+          </label>
+
+          <label>Status *
+            <select name="status" required>
+              <option value="">Selecione</option>
+              <option value="ativo" selected>Ativo</option>
+              <option value="inativo">Inativo</option>
+            </select>
+          </label>
+
+        </div><div class="imagem">
+
+          <label>Foto
+            <input type="file" name="foto" accept="image/*">
+          </label>
+
+          <figure>
+            <img src="imagens/avatar.svg" alt="Foto atual do usuário José da Silva">
+            <figcaption>Foto atual</figcaption>
+          </figure>
+
+        </div>
+
+        <div class="acoes">
+          <input type="submit" value="Salvar">
+          <input type="reset" value="Limpar">
+        </div>
+
+      </form>
+
+    </div>
+
+  </div>
+
+</body>
+</html>
