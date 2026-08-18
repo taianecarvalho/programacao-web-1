@@ -18,7 +18,7 @@ h1 {
 }
 
 /* ---------- Menu lateral ---------- */
-aside {
+.menu {
   display: inline-block;
   vertical-align: top;
   width: 18%;
@@ -29,21 +29,21 @@ aside {
   box-sizing: border-box;
 }
 
-aside img {
+.menu img {
   height: 34px;
 }
 
-aside ul {
+.menu ul {
   list-style: none;
   margin: 34px 0 0;
   padding: 0;
 }
 
-aside li {
+.menu li {
   margin-bottom: 6px;
 }
 
-aside a {
+.menu a {
   display: block;
   padding: 10px 12px;
   border-radius: 4px;
@@ -52,17 +52,17 @@ aside a {
   font-size: 14px;
 }
 
-aside a img {
+.menu a img {
   height: 18px;
   vertical-align: middle;
   margin-right: 8px;
 }
 
-aside a:hover {
+.menu a:hover {
   background-color: #f0f2f5;
 }
 
-aside a.ativo {
+.menu a.ativo {
   background-color: #e3ecff;
   border-left: 4px solid #1156f0;
   color: #1156f0;
@@ -70,7 +70,7 @@ aside a.ativo {
 }
 
 /* ---------- Coluna do conteúdo ----------
-   No HTML, </aside> e <div class="conteudo"> ficam colados: espaço em
+   No HTML, o menu e <div class="conteudo"> ficam colados: espaço em
    branco entre inline-block vira espaço real e quebra a coluna. */
 .conteudo {
   display: inline-block;
@@ -79,18 +79,18 @@ aside a.ativo {
 }
 
 /* ---------- Cabeçalho ---------- */
-header {
+.topo {
   border-bottom: 1px solid #c9c9c9;
   padding: 16px 32px;
   text-align: right;
 }
 
-header a {
+.topo a {
   color: #1a1a1a;
   text-decoration: none;
 }
 
-header img {
+.topo img {
   height: 42px;
   vertical-align: middle;
   margin-right: 10px;
@@ -118,14 +118,15 @@ header img {
 }
 
 /* ---------- Cartão do conteúdo ---------- */
-.conteudo main {
+.conteudo .painel {
   background-color: #efefef;
   margin: 0 32px 32px;
   padding: 28px 32px;
 }
 
 /* ---------- Botões ---------- */
-button,
+input[type="submit"],
+input[type="reset"],
 .botao {
   font-family: inherit;
   font-size: 14px;
@@ -134,17 +135,17 @@ button,
   cursor: pointer;
 }
 
-button[type="submit"] {
+input[type="submit"] {
   background-color: #1156f0;
   color: #ffffff;
   border-width: 0;
 }
 
-button[type="submit"]:hover {
+input[type="submit"]:hover {
   background-color: #0d45c4;
 }
 
-button[type="reset"],
+input[type="reset"],
 .botao {
   background-color: #ffffff;
   color: #1156f0;
@@ -153,7 +154,7 @@ button[type="reset"],
   display: inline-block;
 }
 
-button[type="reset"]:hover,
+input[type="reset"]:hover,
 .botao:hover {
   background-color: #e3ecff;
 }
@@ -196,6 +197,14 @@ textarea {
   margin-top: 5px;
 }
 
+/* Botões feitos com input não seguem a largura dos campos de texto. */
+input[type="submit"],
+input[type="reset"],
+input[type="image"] {
+  width: auto;
+  margin-top: 0;
+}
+
 input:focus,
 select:focus,
 textarea:focus {
@@ -212,10 +221,6 @@ table {
   width: 100%;
   border-collapse: collapse;
   background-color: #ffffff;
-}
-
-caption {
-  display: none;
 }
 
 thead {
@@ -297,7 +302,7 @@ td a {
   margin-top: 12px;
 }
 
-.formulario .acoes button,
+.formulario .acoes input,
 .formulario .acoes .botao {
   margin-right: 16px;
 }
@@ -412,7 +417,7 @@ body.login figure img {
   width: 100%;
 }
 
-body.login section {
+body.login .painel {
   display: inline-block;
   vertical-align: top;
   width: 39.5%;
@@ -439,9 +444,6 @@ body.login .olho {
   border-width: 0;
   padding: 0;
   margin-top: 8px;
-}
-
-body.login .olho img {
   height: 18px;
 }
 
@@ -459,7 +461,7 @@ body.login .marcador input {
   margin: 0 6px 0 0;
 }
 
-body.login button[type="submit"] {
+body.login input[type="submit"] {
   width: 100%;
   padding: 12px;
 }
