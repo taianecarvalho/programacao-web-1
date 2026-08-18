@@ -1,9 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 64" width="260" height="64" role="img" aria-label="Hotel Pet">
-  <g fill="#1D4ED8">
+  <g fill="#FFFFFF">
     <ellipse cx="17" cy="24" rx="5" ry="6.5"/>
     <ellipse cx="30" cy="19" rx="5" ry="6.5"/>
     <ellipse cx="43" cy="24" rx="5" ry="6.5"/>
     <path d="M30 30c7 0 13 5.5 13 11.5C43 46 39 48 34.5 47l-4.5-1-4.5 1C21 48 17 46 17 41.5 17 35.5 23 30 30 30z"/>
   </g>
-  <text x="60" y="42" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="bold" fill="#1D4ED8">Hotel Pet</text>
+  <text x="60" y="42" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="bold" fill="#FFFFFF">Hotel Pet</text>
 </svg>
