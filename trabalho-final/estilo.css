@@ -18,6 +18,13 @@ h1 {
   margin: 0 0 12px;
 }
 
+h2 {
+  font-size: 16px;
+  font-weight: normal;
+  color: #00875a;
+  margin: 16px 0 8px;
+}
+
 /* ---------- Menu lateral ---------- */
 .menu {
   display: inline-block;
@@ -475,6 +482,12 @@ td a:hover {
   background-color: #f7f7f7;
 }
 
+.ficha dd.sem-caixa {
+  padding: 0;
+  border-width: 0;
+  background-color: transparent;
+}
+
 .galeria {
   list-style: none;
   margin: 0;
@@ -485,21 +498,11 @@ td a:hover {
   margin: 0 0 12px;
 }
 
-.reservas {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.reservas li {
-  margin-bottom: 8px;
-}
-
-.reservas .completa {
+.completa {
   color: #35489f;
 }
 
-.reservas .andamento {
+.andamento {
   color: #00875a;
 }
 
