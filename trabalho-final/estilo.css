@@ -551,7 +551,7 @@ body.login figure img {
 body.login .painel {
   display: inline-block;
   vertical-align: top;
-  width: 39.5%;
+  width: 40%;
   min-height: 100vh;
   background-color: #eeeeee;
   padding: 72px 52px;
