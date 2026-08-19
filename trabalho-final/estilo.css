@@ -512,7 +512,14 @@ td a:hover {
 }
 
 .galeria li {
-  margin: 0 0 12px;
+  display: inline-block;
+  vertical-align: top;
+  width: 20%;
+  margin-right: 2%;
+}
+
+.galeria img {
+  width: 100%;
 }
 
 .completa {
