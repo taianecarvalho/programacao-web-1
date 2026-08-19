@@ -15,7 +15,7 @@ h1 {
   font-size: 20px;
   font-weight: normal;
   color: #00875a;
-  margin: 0 0 10px;
+  margin: 0 0 12px;
 }
 
 /* ---------- Menu lateral ---------- */
@@ -34,12 +34,12 @@ h1 {
 
 .menu ul {
   list-style: none;
-  margin: 22px 0 0;
+  margin: 24px 0 0;
   padding: 0;
 }
 
 .menu li {
-  margin-bottom: 6px;
+  margin-bottom: 8px;
 }
 
 .menu a {
@@ -104,7 +104,6 @@ h1 {
   list-style: none;
   margin: 0;
   padding: 0;
-  font-size: 14px;
 }
 
 .trilha li {
@@ -120,7 +119,7 @@ h1 {
 .conteudo .painel {
   background-color: #eeeeee;
   margin: 0 28px 16px;
-  padding: 16px 22px;
+  padding: 16px 28px;
 }
 
 /* ---------- Botões ---------- */
@@ -169,8 +168,8 @@ fieldset {
   background-color: #ffffff;
   border: 1px solid #c1c1c1;
   border-radius: 4px;
-  margin: 10px 0 14px;
-  padding: 8px 18px 12px;
+  margin: 12px 0 16px;
+  padding: 8px 16px 12px;
 }
 
 legend {
@@ -187,7 +186,7 @@ fieldset label {
   display: inline-block;
   vertical-align: top;
   width: 46%;
-  margin: 0 2% 8px 0;
+  margin: 0 2% 12px 0;
 }
 
 label {
@@ -226,7 +225,6 @@ textarea {
 input[type="date"],
 input[type="file"],
 input[type="checkbox"],
-input[type="radio"],
 select {
   cursor: pointer;
 }
@@ -250,6 +248,11 @@ textarea:focus {
 
 .acoes {
   text-align: right;
+  margin-top: 12px;
+}
+
+.acoes input {
+  margin-right: 12px;
 }
 
 /* ---------- Tabela ---------- */
@@ -266,6 +269,7 @@ thead {
 th {
   text-align: left;
   font-weight: normal;
+  font-size: 13px;
   padding: 9px 12px;
 }
 
@@ -290,8 +294,7 @@ td input {
 }
 
 td a {
-  margin-left: 14px;
-  font-size: 13px;
+  margin-right: 12px;
 }
 
 /* ---------- Formulário de cadastro (Novo Pet / Editar Pet) ---------- */
@@ -303,7 +306,7 @@ td a {
 
 .formulario .campos label {
   display: block;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
 }
 
 .formulario .imagem {
@@ -322,7 +325,7 @@ td a {
 }
 
 .formulario .imagem figure {
-  margin: 14px 0 0;
+  margin: 12px 0 0;
 }
 
 .formulario .imagem img {
@@ -333,12 +336,6 @@ td a {
 
 .formulario .acoes {
   text-align: left;
-  margin-top: 8px;
-}
-
-.formulario .acoes input,
-.formulario .acoes .botao {
-  margin-right: 16px;
 }
 
 .periodo {
@@ -353,7 +350,7 @@ td a {
 
 .total {
   font-size: 15px;
-  margin: 14px 0 0;
+  margin: 12px 0 0;
 }
 
 /* ---------- Etiquetas de status ---------- */
@@ -386,13 +383,13 @@ td a {
 }
 
 .etiqueta.inativo {
-  color: #808080;
-  border-color: #808080;
+  color: #5a5a5a;
+  border-color: #5a5a5a;
 }
 
 /* ---------- Ficha do pet (Ver pet) ---------- */
 .acoes-topo {
-  margin: 0 0 18px;
+  margin: 0 0 16px;
 }
 
 .acoes-topo .botao {
@@ -400,7 +397,7 @@ td a {
 }
 
 .ficha {
-  margin: 0 0 18px;
+  margin: 0 0 16px;
 }
 
 .ficha dt {
@@ -408,7 +405,7 @@ td a {
   vertical-align: top;
   width: 24%;
   padding-right: 2%;
-  margin-bottom: 14px;
+  margin-bottom: 12px;
   text-align: right;
   color: #5a5a5a;
   box-sizing: border-box;
@@ -418,7 +415,7 @@ td a {
   display: inline-block;
   vertical-align: top;
   width: 74%;
-  margin: 0 0 14px;
+  margin: 0 0 12px;
 }
 
 .ficha dd img {
@@ -450,11 +447,11 @@ td a {
 }
 
 .reservas .completa {
-  color: #00875a;
+  color: #35489f;
 }
 
 .reservas .andamento {
-  color: #00875a;
+  color: #b06b00;
 }
 
 /* ---------- Tela de login ---------- */
@@ -481,7 +478,7 @@ body.login .painel {
   width: 39.5%;
   min-height: 100vh;
   background-color: #eeeeee;
-  padding: 70px 52px;
+  padding: 72px 52px;
   box-sizing: border-box;
 }
 
@@ -490,7 +487,7 @@ body.login h1 {
   font-size: 34px;
   font-weight: bold;
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 48px;
 }
 
 body.login form div {
@@ -531,13 +528,13 @@ body.login p {
 body.login .sociais ul {
   list-style: none;
   padding: 0;
-  margin: 16px 0 26px;
+  margin: 16px 0 24px;
   text-align: center;
 }
 
 body.login .sociais li {
   display: inline-block;
-  margin: 0 10px;
+  margin: 0 12px;
 }
 
 body.login .sociais a {
@@ -545,7 +542,7 @@ body.login .sociais a {
   border: 1px solid #c1c1c1;
   border-radius: 50px;
   background-color: #ffffff;
-  padding: 11px;
+  padding: 12px;
 }
 
 body.login .sociais a:hover {
