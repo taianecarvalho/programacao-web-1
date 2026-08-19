@@ -356,35 +356,45 @@ td a {
 /* ---------- Etiquetas de status ---------- */
 .etiqueta {
   display: inline-block;
-  padding: 4px 10px;
+  min-width: 120px;
+  padding: 4px 12px;
   border: 1px solid;
-  border-radius: 4px;
-  font-size: 13px;
+  border-radius: 50px;
+  font-size: 11px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  box-sizing: border-box;
 }
 
 .etiqueta.reservada {
   color: #00875a;
   border-color: #00875a;
+  background-color: #e6f3ee;
 }
 
 .etiqueta.progresso {
   color: #b06b00;
   border-color: #b06b00;
+  background-color: #fbf1e2;
 }
 
 .etiqueta.finalizada {
   color: #35489f;
   border-color: #35489f;
+  background-color: #eaedf7;
 }
 
 .etiqueta.ativo {
   color: #00875a;
   border-color: #00875a;
+  background-color: #e6f3ee;
 }
 
 .etiqueta.inativo {
   color: #5a5a5a;
   border-color: #5a5a5a;
+  background-color: #eeeeee;
 }
 
 /* ---------- Ficha do pet (Ver pet) ---------- */
