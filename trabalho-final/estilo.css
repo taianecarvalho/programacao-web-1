@@ -335,8 +335,14 @@ td a:hover {
 }
 
 .formulario .campos label {
-  display: block;
-  margin-bottom: 12px;
+  display: inline-block;
+  vertical-align: top;
+  width: 47%;
+  margin: 0 2% 12px 0;
+}
+
+.formulario .campos label.largo {
+  width: 98%;
 }
 
 .formulario .imagem {
@@ -466,6 +472,17 @@ td a:hover {
 
 .ficha {
   margin: 0;
+}
+
+.ficha .campo {
+  display: inline-block;
+  vertical-align: top;
+  width: 47%;
+  margin-right: 2%;
+}
+
+.ficha .campo.largo {
+  width: 98%;
 }
 
 .ficha dt {
