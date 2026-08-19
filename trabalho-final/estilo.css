@@ -286,7 +286,7 @@ th {
   text-align: left;
   font-weight: normal;
   font-size: 13px;
-  padding: 9px 10px;
+  padding: 9px 8px;
 }
 
 th a {
@@ -295,7 +295,7 @@ th a {
 }
 
 td {
-  padding: 8px 10px;
+  padding: 8px 8px;
   font-size: 13px;
   border-bottom: 1px solid #eeeeee;
 }
@@ -409,6 +409,11 @@ td a:hover {
   color: #35489f;
   border-color: #35489f;
   background-color: #eaedf7;
+}
+
+.etiqueta.ativo,
+.etiqueta.inativo {
+  min-width: 80px;
 }
 
 .etiqueta.ativo {
