@@ -458,30 +458,21 @@ td a:hover {
 }
 
 .ficha {
-  margin: 0 0 16px;
+  margin: 0;
 }
 
 .ficha dt {
-  display: inline-block;
-  vertical-align: top;
-  width: 24%;
-  padding-right: 2%;
-  margin-bottom: 12px;
+  font-size: 13px;
   color: #5a5a5a;
-  box-sizing: border-box;
+  margin-bottom: 3px;
 }
 
 .ficha dd {
-  display: inline-block;
-  vertical-align: top;
-  width: 74%;
   margin: 0 0 12px;
-}
-
-.ficha dd img {
-  width: 160px;
+  padding: 6px 9px;
   border: 1px solid #c1c1c1;
-  background-color: #ffffff;
+  border-radius: 4px;
+  background-color: #f7f7f7;
 }
 
 .galeria {
@@ -491,9 +482,7 @@ td a:hover {
 }
 
 .galeria li {
-  display: inline-block;
-  vertical-align: top;
-  margin: 0 12px 12px 0;
+  margin: 0 0 12px;
 }
 
 .reservas {
@@ -511,7 +500,7 @@ td a:hover {
 }
 
 .reservas .andamento {
-  color: #b06b00;
+  color: #00875a;
 }
 
 /* ---------- Tela de login ---------- */
