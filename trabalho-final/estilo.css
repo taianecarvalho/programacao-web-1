@@ -181,7 +181,7 @@ input[type="reset"],
 
 input[type="reset"]:hover,
 .botao:hover {
-  background-color: #eeeeee;
+  background-color: #f4f6f5;
 }
 
 .botao.principal {
@@ -231,7 +231,7 @@ textarea {
   font-family: inherit;
   font-size: 13px;
   padding: 6px 9px;
-  border: 1px solid #c1c1c1;
+  border: 1px solid #cdd4d1;
   border-radius: 4px;
   background-color: #ffffff;
   width: 100%;
@@ -266,7 +266,7 @@ input[type="email"]:hover,
 input[type="date"]:hover,
 select:hover,
 textarea:hover {
-  background-color: #f7f7f7;
+  background-color: #f4f6f5;
 }
 
 input:focus,
@@ -280,7 +280,7 @@ textarea:focus {
   text-align: right;
   margin-top: 16px;
   padding-top: 12px;
-  border-top: 1px solid #c1c1c1;
+  border-top: 1px solid #e3e6e5;
 }
 
 .acoes input {
@@ -337,7 +337,7 @@ td {
 }
 
 tbody tr:nth-child(even) {
-  background-color: #f7f7f7;
+  background-color: #f9fbfa;
 }
 
 tbody tr:hover {
@@ -353,7 +353,7 @@ td a {
   display: inline-block;
   margin-right: 6px;
   padding: 3px 9px;
-  border: 1px solid #c1c1c1;
+  border: 1px solid #cdd4d1;
   border-radius: 4px;
   background-color: #ffffff;
   font-size: 12px;
@@ -414,7 +414,7 @@ td a:hover {
 
 .formulario .imagem img {
   width: 100%;
-  border: 1px solid #c1c1c1;
+  border: 1px solid #cdd4d1;
   background-color: #ffffff;
 }
 
@@ -488,7 +488,7 @@ td a:hover {
 .etiqueta.inativo {
   color: #5a5a5a;
   border-color: #5a5a5a;
-  background-color: #eeeeee;
+  background-color: #f4f6f5;
 }
 
 /* ---------- Ficha do pet (Ver pet) ---------- */
@@ -582,7 +582,7 @@ td a:hover {
 
 /* ---------- Tela de login ---------- */
 body.login {
-  background-color: #eeeeee;
+  background-color: #f4f6f5;
 }
 
 body.login figure {
@@ -603,7 +603,7 @@ body.login .painel {
   vertical-align: top;
   width: 40%;
   min-height: 100vh;
-  background-color: #eeeeee;
+  background-color: #f4f6f5;
   padding: 40px 52px;
   box-sizing: border-box;
 }
@@ -665,7 +665,7 @@ body.login .sociais li {
 
 body.login .sociais a {
   display: inline-block;
-  border: 1px solid #c1c1c1;
+  border: 1px solid #cdd4d1;
   border-radius: 50px;
   background-color: #ffffff;
   padding: 12px;
