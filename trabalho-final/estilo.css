@@ -340,6 +340,10 @@ td a:hover {
   text-decoration: underline;
 }
 
+.valor {
+  text-align: right;
+}
+
 /* ---------- Formulário de cadastro (Novo Pet / Editar Pet) ---------- */
 .formulario .campos {
   display: inline-block;
