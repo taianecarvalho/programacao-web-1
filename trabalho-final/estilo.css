@@ -758,7 +758,14 @@ body.login .sociais img {
 
   .menu li {
     display: inline-block;
-    margin: 0 6px 6px 0;
+    vertical-align: top;
+    width: 47%;
+    margin: 0 0 8px;
+  }
+
+  .menu li:nth-child(1),
+  .menu li:nth-child(3) {
+    margin-right: 4%;
   }
 
   .topo,
