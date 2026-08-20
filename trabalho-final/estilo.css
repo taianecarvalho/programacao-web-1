@@ -30,7 +30,7 @@ h2 {
 .menu {
   display: inline-block;
   vertical-align: top;
-  width: 20%;
+  width: 17%;
   min-height: 100vh;
   padding: 20px 16px;
   box-sizing: border-box;
@@ -80,13 +80,14 @@ h2 {
 .conteudo {
   display: inline-block;
   vertical-align: top;
-  width: 80%;
+  width: 83%;
   min-height: 100vh;
-  background-color: #ffffff;
+  background-color: #f4f6f5;
 }
 
 /* ---------- Cabeçalho ---------- */
 .topo {
+  background-color: #ffffff;
   border-bottom: 3px solid #00875a;
   padding: 8px 28px;
   text-align: right;
@@ -128,9 +129,17 @@ h2 {
   text-decoration: none;
 }
 
+.trilha a:hover {
+  color: #00875a;
+  text-decoration: underline;
+}
+
 /* ---------- Cartão do conteúdo ---------- */
 .conteudo .painel {
-  background-color: #eeeeee;
+  background-color: #ffffff;
+  border: 1px solid #e3e6e5;
+  border-radius: 6px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
   margin: 0 28px 16px;
   padding: 16px 28px;
 }
@@ -175,17 +184,27 @@ input[type="reset"]:hover,
   background-color: #eeeeee;
 }
 
+.botao.principal {
+  background-color: #00875a;
+  border-color: #00875a;
+  color: #ffffff;
+}
+
+.botao.principal:hover {
+  background-color: #006644;
+}
+
 /* ---------- Bloco de pesquisa ---------- */
 fieldset {
-  background-color: #ffffff;
-  border: 1px solid #c1c1c1;
+  background-color: #f9fbfa;
+  border: 1px solid #e3e6e5;
   border-radius: 4px;
   margin: 12px 0 16px;
   padding: 8px 16px 12px;
 }
 
 legend {
-  background-color: #eeeeee;
+  background-color: #e6f3ee;
   color: #00875a;
   padding: 4px 12px;
   border-radius: 4px;
@@ -284,10 +303,11 @@ table {
   width: 100%;
   border-collapse: collapse;
   background-color: #ffffff;
+  border: 1px solid #e3e6e5;
 }
 
 thead {
-  background-color: #eeeeee;
+  background-color: #f4f6f5;
 }
 
 th {
@@ -313,7 +333,7 @@ th a:hover {
 td {
   padding: 8px 8px;
   font-size: 13px;
-  border-bottom: 1px solid #eeeeee;
+  border-bottom: 1px solid #e3e6e5;
 }
 
 tbody tr:nth-child(even) {
@@ -331,13 +351,19 @@ td input {
 
 td a {
   display: inline-block;
-  margin-right: 10px;
-  padding: 2px 0;
+  margin-right: 6px;
+  padding: 3px 9px;
+  border: 1px solid #c1c1c1;
+  border-radius: 4px;
+  background-color: #ffffff;
+  font-size: 12px;
   text-decoration: none;
+  cursor: pointer;
 }
 
 td a:hover {
-  text-decoration: underline;
+  border-color: #00875a;
+  color: #006644;
 }
 
 .valor {
@@ -518,9 +544,9 @@ td a:hover {
 .ficha dd {
   margin: 0 0 12px;
   padding: 6px 9px;
-  border: 1px solid #c1c1c1;
+  border: 1px solid #e3e6e5;
   border-radius: 4px;
-  background-color: #f7f7f7;
+  background-color: #f9fbfa;
 }
 
 .ficha dd.sem-caixa {
